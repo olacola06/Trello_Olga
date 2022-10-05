@@ -1,0 +1,2 @@
+18:52:55.840 INFO  manager.ApplicationManager - All tests starts in 'Chrome' browser
+18:52:57.064 INFO  TestBase - Starts method: loginWrongEmail
