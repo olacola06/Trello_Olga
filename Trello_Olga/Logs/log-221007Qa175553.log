@@ -1,0 +1,8 @@
+17:55:55.124 INFO  manager.ApplicationManager - All tests starts in 'Chrome' browser
+17:55:56.460 INFO  TestBase - Starts method: loginSuccess
+17:56:06.503 INFO  TestBase - Test starts with user details:-> olamarchen@gmail.com, olacola06
+17:56:15.350 INFO  TestBase - Test passed
+17:56:15.352 INFO  TestBase - Method loginSuccess: finished
+17:56:15.355 INFO  TestBase - Starts method: loginWrongEmail
+17:56:17.081 INFO  TestBase - Test starts with user details:-> olamarchen@gmailcom, olacola06
+17:56:22.474 INFO  TestBase - Method loginWrongEmail: finished

@@ -1,0 +1,3 @@
+20:00:19.771 INFO  manager.ApplicationManager - All tests starts in 'Chrome' browser
+20:00:20.881 INFO  TestBase - Starts method: changeAvatar
+20:00:49.156 INFO  TestBase - Method changeAvatar: finished

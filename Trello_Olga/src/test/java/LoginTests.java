@@ -24,11 +24,13 @@ public class LoginTests extends TestBase{
     @Test
     public void loginWrongEmail(){
         User user = User.builder().email("olamarchen@gmailcom").password("olacola06").build();
+        logger.info("Test starts with user details:-> "+user.getEmail()+", "+user.getPassword());
         app.getUser().initLogin();
         app.getUser().fillRegistForm(user);
         app.getUser().submitLoginError();
-        Assert.assertTrue(app.getUser().errorMessage());
-        Assert.assertTrue(app.getUser().errorMessageDisplayed("An account with this email address does not exist"));
+//        Assert.assertTrue(app.getUser().errorMessage());
+//        Assert.assertTrue(app.getUser().errorMessageDisplayed("An account with this email address does not exist"));
+        Assert.assertTrue(app.getUser().errorMessageAppears());//when message in Russian
 
     }
 }
