@@ -1,0 +1,4 @@
+19:15:58.224 INFO  manager.ApplicationManager - All tests starts in 'Chrome' browser
+19:16:05.056 INFO  TestBase - Starts method: changeAvatarSuccess
+19:16:19.344 INFO  TestBase - Test starts with user details:-> Email: olamarchen@gmail.com, Password: olacola06
+19:16:27.349 INFO  TestBase - Method changeAvatarSuccess: finished
