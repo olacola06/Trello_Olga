@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ChangeAvatarTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-10-08T16:28:19" hostname="ARTEMKA" time="20.963">
+<testsuite name="ChangeAvatarTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-10-09T12:07:47" hostname="ARTEMKA" time="14.913">
   <properties/>
-  <testcase name="changeAvatarSuccess" classname="ChangeAvatarTests" time="20.963"/>
-  <system-out><![CDATA[19:28:06.095 INFO  TestBase - Starts method: changeAvatarSuccess
-19:28:19.926 INFO  TestBase - Test starts with user details:-> Email: olamarchen@gmail.com, Password: olacola06
-[CDwindow-9E2B1FE095F48D09FA983A4B0B5AF4E3, CDwindow-70AF1D50FBE4CBE725928630A739E799]
-19:28:40.891 INFO  TestBase - Method changeAvatarSuccess: finished
+  <testcase name="changeAvatarSuccess" classname="ChangeAvatarTests" time="14.913"/>
+  <system-out><![CDATA[15:07:33.896 INFO  TestBase - Starts method: changeAvatarSuccess
+15:07:47.818 INFO  TestBase - Test starts with user details:-> Email: olamarchen@gmail.com, Password: olacola06
+[CDwindow-23CBB98DC0607D0B9F1EE3C925B79716, CDwindow-12C0EE4C460D3CE976C1DBDFF5C288CA]
+15:08:02.734 INFO  TestBase - Method changeAvatarSuccess: finished
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

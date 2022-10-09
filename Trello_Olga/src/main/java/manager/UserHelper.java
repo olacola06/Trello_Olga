@@ -98,28 +98,45 @@ public class UserHelper extends HelperBase{
         List<String> tabs = new ArrayList<>(wd.getWindowHandles());
         wd.switchTo().window(tabs.get(1));
     }
-
     public String getUrl() {
         return wd.getCurrentUrl();
     }
-
     public String getTitlePage() {
         return wd.getTitle();
     }
-
     public boolean getEmblemPresentOnPage() {
         return wd.findElements(By.cssSelector("a[href='/manage-profile']")).size() > 0;
     }
-
     public void initChangePhoto() {
         click(By.cssSelector("div[data-test-selector='profile-hover-info']"));
-        click(By.xpath("(//span[.='Add profile photo'])[4]"));
+        click(By.xpath("(//span[.='Change profile photo'])[4]"));
     }
-
     public void uploadPhoto(String link) {
 //        WebElement el = wd.findElement(By.xpath("//span[.='Upload a photo']"));//WRONG - need Input and Not Span
 //        el.sendKeys(link);
         wd.findElement(By.id("image-input")).sendKeys(link);
         click(By.xpath("//span[.='Upload']"));
     }
+
+    public boolean avatarUpdated() {
+        try {
+//            new WebDriverWait(wd, 15).until(ExpectedConditions.visibilityOf
+//                    (wd.findElement(By.xpath("//span[.='Avatar added']"))));
+            WebElement el = new WebDriverWait(wd, 15).until(ExpectedConditions.visibilityOf
+                    (wd.findElement(By.xpath("//span[.='Avatar added']"))));
+            return el.isDisplayed();
+
+        } catch (Exception e) {
+            return false;
+        }
+        //return true;
+    }
+
+    public void returnFromAtlassianProfile() {
+        List<String> tabs = new ArrayList<>(wd.getWindowHandles());
+        //wd.switchTo().window(tabs.get(1)).close();
+        wd.close();
+        wd.switchTo().window(tabs.get(0));
+    }
+
 }
