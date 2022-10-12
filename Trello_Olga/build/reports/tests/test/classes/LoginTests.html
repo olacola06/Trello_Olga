@@ -3,17 +3,17 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta http-equiv="x-ua-compatible" content="IE=edge"/>
-<title>Test results - Class ChangeAvatarTests</title>
+<title>Test results - Class LoginTests</title>
 <link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
 <link href="../css/style.css" rel="stylesheet" type="text/css"/>
 <script src="../js/report.js" type="text/javascript"></script>
 </head>
 <body>
 <div id="content">
-<h1>Class ChangeAvatarTests</h1>
+<h1>Class LoginTests</h1>
 <div class="breadcrumbs">
 <a href="../index.html">all</a> &gt; 
-<a href="../packages/default-package.html">default-package</a> &gt; ChangeAvatarTests</div>
+<a href="../packages/default-package.html">default-package</a> &gt; LoginTests</div>
 <div id="summary">
 <table>
 <tr>
@@ -23,7 +23,7 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">1</div>
+<div class="counter">2</div>
 <p>tests</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">24.809s</div>
+<div class="counter">25.825s</div>
 <p>duration</p>
 </div>
 </td>
@@ -78,8 +78,13 @@
 </tr>
 </thead>
 <tr>
-<td class="success">changeAvatarSuccess</td>
-<td class="success">24.809s</td>
+<td class="success">loginSuccess</td>
+<td class="success">21.530s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">loginWrongEmail</td>
+<td class="success">4.295s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -87,10 +92,14 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>17:28:07.716 INFO  TestBase - Starts method: changeAvatarSuccess
-17:28:35.217 INFO  TestBase - Test starts with user details:-&gt; Email: olamarchen@gmail.com, Password: olacola06
-[CDwindow-CE6C0E8FBAC5F2CC4FCA8ED4F0E3663A, CDwindow-74AE52DB27327FEC73976D7B2E69784B]
-17:29:00.062 INFO  TestBase - Method changeAvatarSuccess: finished
+<pre>17:29:00.066 INFO  TestBase - Starts method: loginSuccess
+17:29:04.333 INFO  TestBase - Test starts with user details:-&gt; olamarchen@gmail.com, olacola06
+17:29:25.862 INFO  TestBase - Test passed
+17:29:25.864 INFO  TestBase - Method loginSuccess: finished
+17:29:25.923 INFO  TestBase - Starts method: loginWrongEmail
+17:29:33.767 INFO  TestBase - Test starts with user details:-&gt; olamarchen@gmailcom, olacola06
+Recieved error message:-&gt; ??????? ? ????? ??????? ??????????? ????? ?? ??????????
+17:29:38.063 INFO  TestBase - Method loginWrongEmail: finished
 </pre>
 </span>
 </div>

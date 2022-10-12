@@ -1,8 +1,11 @@
 package manager;
 
+import models.User;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class HelperBase {
     WebDriver wd;
@@ -34,4 +37,14 @@ public class HelperBase {
     public boolean isElementPresent(By locator){
         return wd.findElements(locator).size()>0;
     }
+    public boolean loginSuccess() {
+        try {
+            new WebDriverWait(wd, 5).until(ExpectedConditions.visibilityOf(
+                    wd.findElement(By.xpath("//button[@data-test-id='header-member-menu-button']"))));
+        }catch (Exception e){
+            return false;
+        }
+        return isElementPresent(By.xpath("//button[@data-test-id='header-member-menu-button']"));
+    }
+
 }

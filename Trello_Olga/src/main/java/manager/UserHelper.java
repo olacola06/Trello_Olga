@@ -29,21 +29,15 @@ public class UserHelper extends HelperBase{
         pause(1000);
         type(By.id("password"),user.getPassword());
     }
-
-    public boolean loginSuccess() {
-        try {
-            new WebDriverWait(wd, 5).until(ExpectedConditions.visibilityOf(
-                    wd.findElement(By.xpath("//button[@data-test-id='header-member-menu-button']"))));
-        }catch (Exception e){
-            return false;
-        }
-        return isElementPresent(By.xpath("//button[@data-test-id='header-member-menu-button']"));
-    }
-
     public void logOut() {
         click(By.xpath("//button[@data-test-id='header-member-menu-button']"));
         click(By.xpath("(//button[@class='R2Zt2qKgQJtkYY'])[3]"));
         click(By.id("logout-submit"));
+    }
+    public void login(User user){
+        initLogin();
+        fillRegistForm(user);
+        submitLogin();
     }
 
     public void submitLogin() {
@@ -76,12 +70,6 @@ public class UserHelper extends HelperBase{
         System.out.println("Recieved error message:-> "+message.toString());
         return true;
     }
-    public void login(User user){
-        initLogin();
-        fillRegistForm(user);
-        submitLogin();
-    }
-
     public void clickAvatar() {
         new WebDriverWait(wd, 15).until(ExpectedConditions.visibilityOf(
                 wd.findElement(By.xpath("//button[@data-test-id='header-member-menu-button']"))));

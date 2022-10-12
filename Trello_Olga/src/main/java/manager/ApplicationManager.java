@@ -18,6 +18,7 @@ public class ApplicationManager {
     String browser;
     Logger logger = LoggerFactory.getLogger(ApplicationManager.class);
     UserHelper user;
+    BoardHelper board;
 
     public ApplicationManager(String browser) {
         this.browser = browser;
@@ -37,9 +38,13 @@ public class ApplicationManager {
         wd.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
         user = new UserHelper(wd);
+        board = new BoardHelper(wd);
     }
     public UserHelper getUser(){
         return user;
+    }
+    public BoardHelper GetBoard(){
+        return board;
     }
 
     public void end() {

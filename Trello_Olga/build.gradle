@@ -2,7 +2,7 @@ plugins {
     id 'java'
 }
 
-group 'org.com'
+group 'org.example'
 version '1.0-SNAPSHOT'
 
 repositories {
@@ -12,6 +12,7 @@ repositories {
 dependencies {
     implementation 'org.testng:testng:7.4.0'
     implementation 'org.seleniumhq.selenium:selenium-java:3.141.59'
+    implementation 'org.apache.pdfbox:fontbox:2.0.25'
 
     compileOnly 'org.projectlombok:lombok:1.18.24'
     annotationProcessor 'org.projectlombok:lombok:1.18.24'
@@ -24,4 +25,5 @@ dependencies {
 
 test {
     useTestNG()
+
 }
