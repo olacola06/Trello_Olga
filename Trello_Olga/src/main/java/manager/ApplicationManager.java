@@ -43,7 +43,7 @@ public class ApplicationManager {
     public UserHelper getUser(){
         return user;
     }
-    public BoardHelper GetBoard(){
+    public BoardHelper getBoard(){
         return board;
     }
 

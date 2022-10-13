@@ -13,6 +13,8 @@ public class BoardCreateTests extends TestBase{
     }
     @Test
     public void createBoard(){
+        app.getBoard().initBoardCreation();
+        app.getBoard().createBoard("Yellow");
 
     }
 
