@@ -22,7 +22,7 @@ public class ChangeAvatarTests extends TestBase{
         //Assert.assertTrue(app.getUser().getEmblemPresentOnPage());
 
         app.getUser().initChangePhoto();
-        app.getUser().uploadPhoto("C:/Users/Olga/GitHub/Trello_Olga/Trello_Olga/src/test/resources/qa.png");
+        app.getUser().uploadPhoto("C:/Users/Olga/Trello_Olga/Trello_Olga/src/test/resources/qa.png");
         Assert.assertTrue(app.getUser().avatarUpdated());
         app.getUser().returnFromAtlassianProfile();
         Assert.assertTrue(app.getUser().getUrl().contains("https://trello.com"));
