@@ -1,4 +1,8 @@
+import manager.MyDataProvider;
+import models.Board;
 import models.User;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -11,16 +15,23 @@ public class BoardCreateTests extends TestBase{
             logger.info("Test starts with user details:-> "+"Email: olamarchen@gmail.com, Password: olacola06");
         }
     }
-    @Test
-    public void createBoard(){
+    @Test(dataProvider = "backGroundNames", dataProviderClass = MyDataProvider.class)
+    public void createBoard(String color){
         app.getBoard().initBoardCreation();
-        app.getBoard().createBoard("Yellow");
+        logger.info("Creates board with background color ->>"+color);
+        app.getBoard().createBoard(color);
     }
-    @Test
-    public void createBoard2(){
+    @Test(dataProvider = "boardName", dataProviderClass = MyDataProvider.class)
+    public void createBoard2(Board board){
         app.getBoard().initBoardCreation();
-        app.getBoard().createBoard("Blue");
-    }
+        logger.info("Create board with color->>"+board.getBackgroundColor()+
+                " and name->> "+board.getName());
+        app.getBoard().createBoard2(board);
 
+    }
+    @AfterMethod
+    public void postCondition(){
+        app.getBoard().returnToMain();
+    }
 
 }

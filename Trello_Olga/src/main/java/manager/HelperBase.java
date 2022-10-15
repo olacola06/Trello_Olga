@@ -27,9 +27,9 @@ public class HelperBase {
         wd.findElement(locator).click();
     }
 
-    public void pause(int seconds) {
+    public void pause(int second) {
         try {
-            Thread.sleep(seconds);
+            Thread.sleep(second);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }

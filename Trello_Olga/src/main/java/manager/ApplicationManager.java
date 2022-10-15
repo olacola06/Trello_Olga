@@ -1,13 +1,11 @@
 package manager;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
+
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.remote.BrowserType;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -25,12 +23,14 @@ public class ApplicationManager {
 
     }
     public void init() {
-        if (browser.equals(BrowserType.CHROME)){
-            wd = new EventFiringWebDriver(new ChromeDriver());
+           if (browser.equals(BrowserType.CHROME)){
+               ChromeOptions options = new ChromeOptions();
+               options.addArguments("--lang=en");
+            wd = new EventFiringWebDriver(new ChromeDriver(options));
             logger.info("All tests starts in 'Chrome' browser");
         }
         else if(browser.equals(BrowserType.EDGE)){
-            wd = new EventFiringWebDriver(new EdgeDriver());
+            wd = new EventFiringWebDriver (new EdgeDriver());
             logger.info("All tests starts in 'Edge' browser");
         }
         wd.manage().window().maximize();
