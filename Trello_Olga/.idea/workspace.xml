@@ -4,28 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="775f62b8-a477-4841-acdd-47c327cb3129" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/manager/MyDataProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="106930ef-0657-463c-ac0b-126a733aed01" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/log-221009Qa150335.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/log-221009Qa150724.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/log-221012Qa172238.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/log-221012Qa172747.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/log-221013Qa161648.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/log-221013Qa162045.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/log-221013Qa162454.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/log-221013Qa163305.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/log-221014Qa133407.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/log-221014Qa133708.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/log-221014Qa143025.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/log-221014Qa205052.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/manager/ApplicationManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/manager/ApplicationManager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/manager/BoardHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/manager/BoardHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/BoardCreateTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/BoardCreateTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/manager/HelperBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/manager/HelperBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/manager/MyDataProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/manager/MyDataProvider.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/BoardCreateTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/BoardCreateTests.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" afterDir="false" />
@@ -38,9 +22,8 @@
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/manager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/ApplicationManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/manager/BoardHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/BoardHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/manager/HelperBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/HelperBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/manager/MyDataProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/MyDataProvider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/BoardCreateTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BoardCreateTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,20 +36,13 @@
       <ProjectState />
     </projectState>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2GAG5qjCtw9IjnutULBy4iADE2t" />
+  <component name="ProjectId" id="2GDqSU3QodjSE744TeSHW6QYgO9" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -78,30 +54,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.BoardCreateTests.createBoard">
-    <configuration name="BoardCreateTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;BoardCreateTests&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Gradle.BoardCreateTests.createBoard2">
     <configuration name="BoardCreateTests.createBoard" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -150,32 +103,20 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.BoardCreateTests.createBoard" />
         <item itemvalue="Gradle.BoardCreateTests.createBoard2" />
-        <item itemvalue="Gradle.BoardCreateTests" />
+        <item itemvalue="Gradle.BoardCreateTests.createBoard" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="775f62b8-a477-4841-acdd-47c327cb3129" name="Changes" comment="" />
-      <created>1665823796313</created>
+      <changelist id="106930ef-0657-463c-ac0b-126a733aed01" name="Changes" comment="" />
+      <created>1665933502911</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1665823796313</updated>
+      <updated>1665933502911</updated>
     </task>
     <servers />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
 </project>

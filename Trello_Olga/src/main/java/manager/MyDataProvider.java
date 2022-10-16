@@ -14,7 +14,7 @@ public class MyDataProvider{
         List<Object[]> colors = new ArrayList();
         colors.add(new Object[]{"Orange"});
         colors.add(new Object[]{"Green"});
-        colors.add(new Object[]{"Red"});
+        colors.add(new Object[]{"Purple"});
         colors.add(new Object[]{"Blue"});
 
         return colors.iterator();

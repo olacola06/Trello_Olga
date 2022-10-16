@@ -22,7 +22,6 @@ dependencies {
     implementation 'ch.qos.logback:logback-classic:1.2.9'
 }
 
-
 test {
     useTestNG()
 }

@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="BoardCreateTests" tests="4" skipped="0" failures="1" errors="0" timestamp="2022-10-15T16:04:07" hostname="ARTEMKA" time="33.604">
+<testsuite name="BoardCreateTests" tests="4" skipped="0" failures="1" errors="0" timestamp="2022-10-16T15:37:44" hostname="ARTEMKA" time="30.321">
   <properties/>
-  <testcase name="createBoard[0](Orange)" classname="BoardCreateTests" time="11.248"/>
-  <testcase name="createBoard[1](Green)" classname="BoardCreateTests" time="4.309"/>
-  <testcase name="createBoard[2](Red)" classname="BoardCreateTests" time="12.23">
-    <failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[.='Create board']&quot;}&#10;  (Session info: chrome=106.0.5249.119)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'ARTEMKA', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\ompre\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65463}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 751fa313af8459e7a6e73703ef40a4cf&#10;*** Element info: {Using=xpath, value=//div[.='Create board']}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[.='Create board']&quot;}
+  <testcase name="createBoard2[0](Board(backgroundColor=Orange, name=Orange1))" classname="BoardCreateTests" time="10.611"/>
+  <testcase name="createBoard2[1](Board(backgroundColor=Red, name=Red1))" classname="BoardCreateTests" time="4.9"/>
+  <testcase name="createBoard2[2](Board(backgroundColor=Green, name=Green1))" classname="BoardCreateTests" time="4.775"/>
+  <testcase name="createBoard2[3](Board(backgroundColor=Blue, name=Blue1))" classname="BoardCreateTests" time="10.024">
+    <failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div[class='board-tile mod-add']&quot;}&#10;  (Session info: chrome=106.0.5249.119)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'ARTEMKA', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\ompre\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57932}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 124a6e1b2045eeb925ae7b1dce800efc&#10;*** Element info: {Using=css selector, value=div[class='board-tile mod-add']}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div[class='board-tile mod-add']&quot;}
   (Session info: chrome=106.0.5249.119)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'ARTEMKA', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\ompre\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65463}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 751fa313af8459e7a6e73703ef40a4cf
-*** Element info: {Using=xpath, value=//div[.='Create board']}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\ompre\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57932}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 124a6e1b2045eeb925ae7b1dce800efc
+*** Element info: {Using=css selector, value=div[class='board-tile mod-add']}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -24,8 +25,8 @@ Session ID: 751fa313af8459e7a6e73703ef40a4cf
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -33,8 +34,8 @@ Session ID: 751fa313af8459e7a6e73703ef40a4cf
 	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
 	at com.sun.proxy.$Proxy13.findElement(Unknown Source)
 	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
-	at manager.BoardHelper.createBoard(BoardHelper.java:33)
-	at BoardCreateTests.createBoard(BoardCreateTests.java:22)
+	at manager.BoardHelper.initBoardCreation(BoardHelper.java:23)
+	at BoardCreateTests.createBoard2(BoardCreateTests.java:26)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -83,19 +84,17 @@ Session ID: 751fa313af8459e7a6e73703ef40a4cf
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="createBoard[3](Blue)" classname="BoardCreateTests" time="4.008"/>
-  <system-out><![CDATA[19:04:07.071 INFO  TestBase - Starts method: createBoard
-19:04:16.925 INFO  TestBase - Creates board with background color ->>Orange
-19:04:19.871 INFO  TestBase - Method createBoard: finished
-19:04:19.872 INFO  TestBase - Starts method: createBoard
-19:04:22.760 INFO  TestBase - Creates board with background color ->>Green
-19:04:24.244 INFO  TestBase - Method createBoard: finished
-19:04:24.245 INFO  TestBase - Starts method: createBoard
-19:04:26.454 INFO  TestBase - Creates board with background color ->>Red
-19:04:36.667 INFO  TestBase - Method createBoard: finished
-19:04:36.668 INFO  TestBase - Starts method: createBoard
-19:04:39.305 INFO  TestBase - Creates board with background color ->>Blue
-19:04:40.739 INFO  TestBase - Method createBoard: finished
+  <system-out><![CDATA[18:37:44.556 INFO  TestBase - Starts method: createBoard2
+18:37:53.074 INFO  TestBase - Create board with color->>Orange and name->> Orange1
+18:37:55.172 INFO  TestBase - Method createBoard2: finished
+18:37:55.173 INFO  TestBase - Starts method: createBoard2
+18:37:58.035 INFO  TestBase - Create board with color->>Red and name->> Red1
+18:38:00.075 INFO  TestBase - Method createBoard2: finished
+18:38:00.077 INFO  TestBase - Starts method: createBoard2
+18:38:02.789 INFO  TestBase - Create board with color->>Green and name->> Green1
+18:38:04.853 INFO  TestBase - Method createBoard2: finished
+18:38:04.854 INFO  TestBase - Starts method: createBoard2
+18:38:14.879 INFO  TestBase - Method createBoard2: finished
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

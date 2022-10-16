@@ -32,15 +32,18 @@ public class BoardHelper extends HelperBase{
         new WebDriverWait(wd,10).until(ExpectedConditions.visibilityOf
                 (wd.findElement(By.xpath("//div[.='Create board']"))));
         click(By.cssSelector(colorLocator));
-        pause(1000);
         type(By.cssSelector("input[data-test-id='create-board-title-input']"),color+num);
         click(By.cssSelector("button[data-test-id='create-board-submit-button']"));
+        pause(1000);
+        returnToMain();
     }
     public void createBoard2(Board board) {
-//        String colorLocator = String.format("button[title='%s']",color);
-//        click(By.cssSelector(colorLocator));
-//        type(By.cssSelector("input[data-test-id='create-board-title-input']"),color+num);
-//        click(By.cssSelector("button[data-test-id='create-board-submit-button']"));
+        String colorLocator = String.format("button[title='%s']",board.getBackgroundColor());
+        click(By.cssSelector(colorLocator));
+        type(By.cssSelector("input[data-test-id='create-board-title-input']"), board.getName());
+        click(By.cssSelector("button[data-test-id='create-board-submit-button']"));
+        pause(1000);
+        returnToMain();
     }
 
     public void returnToMain() {

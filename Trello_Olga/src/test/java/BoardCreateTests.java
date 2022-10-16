@@ -29,9 +29,5 @@ public class BoardCreateTests extends TestBase{
         app.getBoard().createBoard2(board);
 
     }
-    @AfterMethod
-    public void postCondition(){
-        app.getBoard().returnToMain();
-    }
 
 }
