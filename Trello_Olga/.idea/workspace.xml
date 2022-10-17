@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="106930ef-0657-463c-ac0b-126a733aed01" name="Changes" comment="">
+    <list default="true" id="fa36ebd7-64ef-4fb1-8256-e7a052871f9d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/manager/BoardHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/manager/BoardHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/manager/HelperBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/manager/HelperBase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/manager/MyDataProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/manager/MyDataProvider.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/BoardCreateTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/BoardCreateTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/BoardCreateTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/BoardCreateTests.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" afterDir="false" />
@@ -24,7 +21,6 @@
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/manager/BoardHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/BoardHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/manager/MyDataProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/MyDataProvider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/BoardCreateTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BoardCreateTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +39,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2GDqSU3QodjSE744TeSHW6QYgO9" />
+  <component name="ProjectId" id="2GFiimli8xfLVvgq0cdgM5eivbq" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -55,7 +51,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.BoardCreateTests.createBoard2">
+  <component name="RunManager" selected="Gradle.BoardCreateTests.createBoard">
     <configuration name="BoardCreateTests.createBoard" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -104,19 +100,19 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.BoardCreateTests.createBoard2" />
         <item itemvalue="Gradle.BoardCreateTests.createBoard" />
+        <item itemvalue="Gradle.BoardCreateTests.createBoard2" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="106930ef-0657-463c-ac0b-126a733aed01" name="Changes" comment="" />
-      <created>1665933502911</created>
+      <changelist id="fa36ebd7-64ef-4fb1-8256-e7a052871f9d" name="Changes" comment="" />
+      <created>1665990863197</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1665933502911</updated>
+      <updated>1665990863197</updated>
     </task>
     <servers />
   </component>

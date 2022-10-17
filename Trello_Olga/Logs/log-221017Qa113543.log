@@ -1,0 +1,12 @@
+11:35:45.694 INFO  manager.ApplicationManager - All tests starts in 'Chrome' browser
+11:36:11.550 INFO  TestBase - Test starts with user details:-> Email: olamarchen@gmail.com, Password: olacola06
+11:36:11.577 INFO  TestBase - Starts method: createBoard
+11:36:19.168 INFO  TestBase - Creates board with background color ->>Orange
+11:36:22.294 INFO  TestBase - Method createBoard: finished
+11:36:22.295 INFO  TestBase - Starts method: createBoard
+11:36:37.368 INFO  TestBase - Method createBoard: finished
+11:36:37.368 INFO  TestBase - Starts method: createBoard
+11:36:51.589 INFO  TestBase - Method createBoard: finished
+11:36:51.589 INFO  TestBase - Starts method: createBoard
+11:36:53.808 INFO  TestBase - Creates board with background color ->>Blue
+11:36:55.840 INFO  TestBase - Method createBoard: finished

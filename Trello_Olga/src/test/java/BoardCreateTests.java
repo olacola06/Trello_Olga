@@ -17,12 +17,16 @@ public class BoardCreateTests extends TestBase{
     }
     @Test(dataProvider = "backGroundNames", dataProviderClass = MyDataProvider.class)
     public void createBoard(String color){
+        if(app.getBoard().isTen()){
+            app.getBoard().deleteBoard();}
         app.getBoard().initBoardCreation();
         logger.info("Creates board with background color ->>"+color);
         app.getBoard().createBoard(color);
     }
     @Test(dataProvider = "boardName", dataProviderClass = MyDataProvider.class)
     public void createBoard2(Board board){
+        if(app.getBoard().isTen()){
+            app.getBoard().deleteBoard();}
         app.getBoard().initBoardCreation();
         logger.info("Create board with color->>"+board.getBackgroundColor()+
                 " and name->> "+board.getName());
