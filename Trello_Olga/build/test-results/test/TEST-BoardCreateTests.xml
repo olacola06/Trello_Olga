@@ -1,41 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="BoardCreateTests" tests="4" skipped="0" failures="1" errors="0" timestamp="2022-10-17T08:45:38" hostname="ARTEMKA" time="63.62">
+<testsuite name="BoardCreateTests" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-10-20T07:23:35" hostname="DESKTOP-KF54E9L" time="50.562">
   <properties/>
-  <testcase name="createBoard[0](Orange)" classname="BoardCreateTests" time="25.317"/>
-  <testcase name="createBoard[1](Green)" classname="BoardCreateTests" time="20.008"/>
-  <testcase name="createBoard[2](Purple)" classname="BoardCreateTests" time="14.239">
-    <failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[.='Permanently delete board']&quot;}&#10;  (Session info: chrome=106.0.5249.119)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'ARTEMKA', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\ompre\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63179}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: fd12a0fc9929c5420e81e0d2c27d224d&#10;*** Element info: {Using=xpath, value=//button[.='Permanently delete board']}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[.='Permanently delete board']&quot;}
-  (Session info: chrome=106.0.5249.119)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'ARTEMKA', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\ompre\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63179}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: fd12a0fc9929c5420e81e0d2c27d224d
-*** Element info: {Using=xpath, value=//button[.='Permanently delete board']}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
-	at com.sun.proxy.$Proxy13.findElement(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
-	at manager.HelperBase.click(HelperBase.java:27)
-	at manager.BoardHelper.deleteBoard(BoardHelper.java:73)
-	at BoardCreateTests.createBoard(BoardCreateTests.java:21)
+  <testcase name="boardCreation" classname="BoardCreateTests" time="50.562">
+    <failure message="java.lang.AssertionError: expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at org.testng.Assert.assertTrue(Assert.java:55)
+	at manager.BoardHelper.createBoard(BoardHelper.java:45)
+	at BoardCreateTests.boardCreation(BoardCreateTests.java:25)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -84,22 +57,11 @@ Session ID: fd12a0fc9929c5420e81e0d2c27d224d
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="createBoard[3](Blue)" classname="BoardCreateTests" time="4.03"/>
-  <system-out><![CDATA[11:45:38.024 INFO  TestBase - Starts method: createBoard
+  <system-out><![CDATA[10:23:35.709 INFO  TestBase - Starts method: boardCreation
 Total boards created = 10
-11:46:01.385 INFO  TestBase - Creates board with background color ->>Orange
-11:46:03.344 INFO  TestBase - Method createBoard: finished
-11:46:03.345 INFO  TestBase - Starts method: createBoard
-Total boards created = 10
-11:46:21.827 INFO  TestBase - Creates board with background color ->>Green
-11:46:23.354 INFO  TestBase - Method createBoard: finished
-11:46:23.376 INFO  TestBase - Starts method: createBoard
-Total boards created = 10
-11:46:37.615 INFO  TestBase - Method createBoard: finished
-11:46:37.615 INFO  TestBase - Starts method: createBoard
-Total boards created = 9
-11:46:39.874 INFO  TestBase - Creates board with background color ->>Blue
-11:46:41.646 INFO  TestBase - Method createBoard: finished
+10:24:25.161 INFO  TestBase - Creates board with background color ->>Red
+board name is - Red8
+10:24:26.280 INFO  TestBase - Method boardCreation: finished
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -1,6 +1,7 @@
 import manager.MyDataProvider;
 import models.Board;
 import models.User;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -15,13 +16,29 @@ public class BoardCreateTests extends TestBase{
             logger.info("Test starts with user details:-> "+"Email: olamarchen@gmail.com, Password: olacola06");
         }
     }
+    @Test
+    public void boardCreation(){
+        Board board = Board.builder().backgroundColor("Red").build();
+        int boardsAmountBefore = app.getBoard().countBoards();
+        app.getBoard().initBoardCreation();
+        logger.info("Creates board with background color ->>"+board.getBackgroundColor());
+        app.getBoard().createBoard(board.getBackgroundColor());
+
+        app.getBoard().returnToMain();
+        int boardsAmountAfter = app.getBoard().countBoards();
+        Assert.assertNotEquals(boardsAmountBefore-boardsAmountAfter, 1);
+
+    }
     @Test(dataProvider = "backGroundNames", dataProviderClass = MyDataProvider.class)
     public void createBoard(String color){
-        if(app.getBoard().isTen()){
-            app.getBoard().deleteBoard();}
+//        if(app.getBoard().isTen()){
+//            app.getBoard().deleteBoard();}
         app.getBoard().initBoardCreation();
+        int boardsAmountBefore = app.getBoard().countBoards();
         logger.info("Creates board with background color ->>"+color);
         app.getBoard().createBoard(color);
+        int boardsAmountAfter = app.getBoard().countBoards();
+        Assert.assertNotEquals(boardsAmountAfter-boardsAmountBefore, 1);
     }
     @Test(dataProvider = "boardName", dataProviderClass = MyDataProvider.class)
     public void createBoard2(Board board){

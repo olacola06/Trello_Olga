@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import java.util.List;
 import java.util.Random;
@@ -21,6 +22,8 @@ public class BoardHelper extends HelperBase{
 //            click(By.cssSelector("div[class='board-tile mod-add']"));
 //        }
 //        else click(By.cssSelector(""));
+        if(isTen()){
+            deleteBoard();}
         new WebDriverWait(wd,10).until(ExpectedConditions.visibilityOf
                 (wd.findElement(By.cssSelector("div[class='board-tile mod-add']"))));
         click(By.cssSelector("div[class='board-tile mod-add']"));
@@ -31,14 +34,22 @@ public class BoardHelper extends HelperBase{
         Random random = new Random();
         int num = random.nextInt(10);
         String colorLocator = String.format("button[title='%s']",color);
-        new WebDriverWait(wd,10).until(ExpectedConditions.visibilityOf
-                (wd.findElement(By.xpath("//div[.='Create board']"))));
+//        new WebDriverWait(wd,10).until(ExpectedConditions.visibilityOf
+//                (wd.findElement(By.xpath("//h2[.='Create board']"))));
+        String boardName = color+num;
+        System.out.println("board name is - "+boardName);
         click(By.cssSelector(colorLocator));
-        type(By.cssSelector("input[data-test-id='create-board-title-input']"),color+num);
-        click(By.cssSelector("button[data-test-id='create-board-submit-button']"));
-        pause(1000);
-        returnToMain();
+        type(By.cssSelector("input[data-test-id='create-board-title-input']"),boardName);
+        new WebDriverWait(wd,15).until(ExpectedConditions
+                .visibilityOf(wd.findElement(By.cssSelector("button[data-test-id='create-board-submit-button']")))).click();
+        Assert.assertTrue(urlContainsColor(boardName));
+
     }
+
+    public boolean urlContainsColor(String name) {
+        return getUrl().contains(name.toLowerCase());
+    }
+
     public void createBoard2(Board board) {
         String colorLocator = String.format("button[title='%s']",board.getBackgroundColor());
         click(By.cssSelector(colorLocator));
@@ -65,11 +76,12 @@ public class BoardHelper extends HelperBase{
         new WebDriverWait(wd,10).until(ExpectedConditions.visibilityOf(
                 wd.findElement(By.xpath("(//ul[@class='aWNF0hq4282LfA'])[2] /div[2] /li[1]")))).click();
         click(By.xpath("(//button[@aria-label='Board actions menu'])[1]"));
-        pause(1000);
-        click(By.xpath("//button[.='Close board...']"));
-        pause(1000);
+        new WebDriverWait(wd,20).until(ExpectedConditions.
+                visibilityOf(wd.findElement(By.xpath("//button[.='Close board']")))).click();
+        //click(By.xpath("//button[.='Close board...']"));
+        pause(2000);
         click(By.xpath("//button[.='Close']"));
-        pause(1000);
+        pause(2000);
         click(By.xpath("//button[.='Permanently delete board']"));
         click(By.xpath("//button[.='Delete']"));
         try{
@@ -78,5 +90,9 @@ public class BoardHelper extends HelperBase{
         }catch (Exception e){
             wd.navigate().to("https://trello.com/u/olamarchen/boards");
         }
+    }
+    public int countBoards() {
+        int amount = wd.findElements(By.cssSelector("a[class$='board-tile']")).size();
+        return amount;
     }
 }

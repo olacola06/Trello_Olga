@@ -46,5 +46,11 @@ public class HelperBase {
         }
         return isElementPresent(By.xpath("//button[@data-test-id='header-member-menu-button']"));
     }
+    public String getUrl() {
+        return wd.getCurrentUrl();
+    }
+    public String getTitlePage() {
+        return wd.getTitle();
+    }
 
 }

@@ -86,12 +86,6 @@ public class UserHelper extends HelperBase{
         List<String> tabs = new ArrayList<>(wd.getWindowHandles());
         wd.switchTo().window(tabs.get(1));
     }
-    public String getUrl() {
-        return wd.getCurrentUrl();
-    }
-    public String getTitlePage() {
-        return wd.getTitle();
-    }
     public boolean getEmblemPresentOnPage() {
         return wd.findElements(By.cssSelector("a[href='/manage-profile']")).size() > 0;
     }
