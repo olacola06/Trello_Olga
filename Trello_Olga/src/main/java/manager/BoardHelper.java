@@ -23,11 +23,13 @@ public class BoardHelper extends HelperBase{
 //        }
 //        else click(By.cssSelector(""));
         if(isTen()){
-            deleteBoard();}
+            //deleteBoard();
+            deleteBoards();
+        }
         new WebDriverWait(wd,10).until(ExpectedConditions.visibilityOf
                 (wd.findElement(By.cssSelector("div[class='board-tile mod-add']"))));
         click(By.cssSelector("div[class='board-tile mod-add']"));
-        pause(2000);
+        pause(3000);
     }
 
     public void createBoard(String color) {
@@ -42,8 +44,9 @@ public class BoardHelper extends HelperBase{
         type(By.cssSelector("input[data-test-id='create-board-title-input']"),boardName);
         new WebDriverWait(wd,15).until(ExpectedConditions
                 .visibilityOf(wd.findElement(By.cssSelector("button[data-test-id='create-board-submit-button']")))).click();
+        pause(2000);
         Assert.assertTrue(urlContainsColor(boardName));
-
+        returnToMain();
     }
 
     public boolean urlContainsColor(String name) {
@@ -91,8 +94,32 @@ public class BoardHelper extends HelperBase{
             wd.navigate().to("https://trello.com/u/olamarchen/boards");
         }
     }
+    public void deleteBoards() {
+        List<WebElement> boardsList = wd.findElements(By.cssSelector("a[class$='board-tile']"));
+        int boardsAmount = boardsList.size();
+        while (boardsAmount > 5) {
+            click(By.cssSelector("ul[class='boards-page-board-section-list'] li:first-child"));
+            new WebDriverWait(wd, 10).until(ExpectedConditions.visibilityOf(
+                    wd.findElement(By.xpath("(//ul[@class='aWNF0hq4282LfA'])[2] /div[2] /li[1]")))).click();
+            click(By.xpath("(//button[@aria-label='Board actions menu'])[1]"));
+            new WebDriverWait(wd, 20).until(ExpectedConditions.
+                    visibilityOf(wd.findElement(By.xpath("//button[.='Close board']")))).click();
+            click(By.xpath("//button[.='Close']"));
+            click(By.xpath("//button[.='Permanently delete board']"));
+            click(By.xpath("//button[.='Delete']"));
+            try {
+                if (wd.findElement(By.cssSelector("div[class='WUvMn55B1GT4IM']")).isDisplayed()) {
+                    click(By.cssSelector("span[aria-label='CloseIcon']"));
+                }
+            } catch (Exception e) {
+                wd.navigate().to("https://trello.com/u/olamarchen/boards");
+            }
+            boardsAmount--;
+        }
+    }
     public int countBoards() {
         int amount = wd.findElements(By.cssSelector("a[class$='board-tile']")).size();
+        System.out.println("Total amount of boards =  "+amount);
         return amount;
     }
 }

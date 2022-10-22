@@ -7,6 +7,7 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 
+import java.io.IOException;
 import java.lang.reflect.Method;
 
 public class TestBase {
@@ -24,7 +25,7 @@ public class TestBase {
         logger.info("Method "+m.getName()+": finished");
     }
     @BeforeSuite
-    public void start(){
+    public void start() throws IOException {
         app.init();
     }
 

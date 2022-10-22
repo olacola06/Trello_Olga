@@ -23,7 +23,7 @@ public class LoginTests extends TestBase{
     }
     @Test
     public void loginWrongEmail(){
-        User user = User.builder().email("olamarchen@gmailcom").password("olacola06").build();
+        User user = User.builder().email(app.getEmail()).password(app.getPassword()).build();
         logger.info("Test starts with user details:-> "+user.getEmail()+", "+user.getPassword());
         app.getUser().initLogin();
         app.getUser().fillRegistForm(user);

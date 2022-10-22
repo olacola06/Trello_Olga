@@ -1,9 +1,7 @@
-import manager.MyDataProvider;
+import manager.DataProviderBoard;
 import models.Board;
 import models.User;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -12,13 +10,14 @@ public class BoardCreateTests extends TestBase{
     @BeforeTest
     public void preConditions(){
         if(!app.getUser().loginSuccess()){
-            app.getUser().login(User.builder().email("olamarchen@gmail.com").password("olacola06").build());
-            logger.info("Test starts with user details:-> "+"Email: olamarchen@gmail.com, Password: olacola06");
+            app.getUser().login(User.builder().email(app.getEmail()).password(app.getPassword()).build());
+            logger.info("Test starts with user details:-> Email:->"+app.getEmail()+
+                    " and Password:->"+app.getPassword());
         }
     }
     @Test
     public void boardCreation(){
-        Board board = Board.builder().backgroundColor("Red").build();
+        Board board = Board.builder().backgroundColor("Blue").build();
         int boardsAmountBefore = app.getBoard().countBoards();
         app.getBoard().initBoardCreation();
         logger.info("Creates board with background color ->>"+board.getBackgroundColor());
@@ -26,10 +25,10 @@ public class BoardCreateTests extends TestBase{
 
         app.getBoard().returnToMain();
         int boardsAmountAfter = app.getBoard().countBoards();
-        Assert.assertNotEquals(boardsAmountBefore-boardsAmountAfter, 1);
+        Assert.assertEquals(boardsAmountAfter-boardsAmountBefore, 1);
 
     }
-    @Test(dataProvider = "backGroundNames", dataProviderClass = MyDataProvider.class)
+    @Test(dataProvider = "backGroundNames", dataProviderClass = DataProviderBoard.class)
     public void createBoard(String color){
 //        if(app.getBoard().isTen()){
 //            app.getBoard().deleteBoard();}
@@ -38,17 +37,17 @@ public class BoardCreateTests extends TestBase{
         logger.info("Creates board with background color ->>"+color);
         app.getBoard().createBoard(color);
         int boardsAmountAfter = app.getBoard().countBoards();
-        Assert.assertNotEquals(boardsAmountAfter-boardsAmountBefore, 1);
+        Assert.assertEquals(boardsAmountAfter-boardsAmountBefore, 1);
     }
-    @Test(dataProvider = "boardName", dataProviderClass = MyDataProvider.class)
-    public void createBoard2(Board board){
-        if(app.getBoard().isTen()){
-            app.getBoard().deleteBoard();}
-        app.getBoard().initBoardCreation();
-        logger.info("Create board with color->>"+board.getBackgroundColor()+
-                " and name->> "+board.getName());
-        app.getBoard().createBoard2(board);
-
-    }
+//    @Test(dataProvider = "boardName", dataProviderClass = DataProviderBoard.class)
+//    public void createBoard2(Board board){
+//        if(app.getBoard().isTen()){
+//            app.getBoard().deleteBoard();}
+//        app.getBoard().initBoardCreation();
+//        logger.info("Create board with color->>"+board.getBackgroundColor()+
+//                " and name->> "+board.getName());
+//        app.getBoard().createBoard2(board);
+//
+//    }
 
 }

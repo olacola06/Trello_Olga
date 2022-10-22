@@ -5,9 +5,68 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2395ac41-234b-4f54-bcb4-9213883345ef" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/config.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/log-221015Qa190040.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/log-221015Qa190350.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/log-221016Qa182329.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/log-221016Qa182633.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/log-221016Qa182957.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/log-221016Qa183354.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/log-221016Qa183723.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/log-221017Qa104032.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/log-221017Qa104131.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/log-221017Qa104317.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/log-221017Qa104612.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/log-221017Qa105109.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/log-221017Qa105627.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/log-221017Qa105834.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/log-221017Qa110444.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/log-221017Qa110559.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/log-221017Qa113003.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/log-221017Qa113217.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/log-221017Qa113543.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/log-221017Qa114253.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/log-221017Qa114503.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/log-221019Qa165813.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/log-221019Qa170829.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/log-221019Qa171648.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/log-221019Qa171925.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/log-221019Qa172541.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/log-221020Qa085449.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/log-221020Qa090042.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/log-221020Qa090431.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/log-221020Qa090821.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/log-221020Qa091331.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/log-221020Qa091747.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/log-221020Qa093714.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/log-221020Qa095314.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/log-221020Qa102259.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/manager/ApplicationManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/manager/ApplicationManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/manager/MyDataProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/BoardCreateTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/BoardCreateTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/LoginTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/LoginTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/TestBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/TestBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/BoardCreateTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/BoardCreateTests.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-BoardCreateTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-BoardCreateTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/manager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/ApplicationManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/manager/BoardHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/BoardHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/manager/MyDataProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/DataProviderBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BoardCreateTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BoardCreateTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LoginTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestBase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +77,16 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view />
+      </state>
+    </system>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -34,9 +103,65 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/Olga/Trello_Haifa13"
   }
 }]]></component>
+  <component name="RunManager" selected="Gradle.BoardCreateTests">
+    <configuration name="BoardCreateTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;BoardCreateTests&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="BoardCreateTests.boardCreation (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;BoardCreateTests.boardCreation&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.BoardCreateTests" />
+        <item itemvalue="Gradle.BoardCreateTests.boardCreation (1)" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -47,5 +172,16 @@
       <updated>1666370815865</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

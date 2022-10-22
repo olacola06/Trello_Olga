@@ -1,67 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="BoardCreateTests" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-10-20T07:23:35" hostname="DESKTOP-KF54E9L" time="50.562">
+<testsuite name="BoardCreateTests" tests="5" skipped="0" failures="0" errors="0" timestamp="2022-10-22T16:10:43" hostname="ARTEMKA" time="56.926">
   <properties/>
-  <testcase name="boardCreation" classname="BoardCreateTests" time="50.562">
-    <failure message="java.lang.AssertionError: expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertTrue(Assert.java:45)
-	at org.testng.Assert.assertTrue(Assert.java:55)
-	at manager.BoardHelper.createBoard(BoardHelper.java:45)
-	at BoardCreateTests.boardCreation(BoardCreateTests.java:25)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:141)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:90)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at com.sun.proxy.$Proxy2.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
-	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
-	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
-	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-</failure>
-  </testcase>
-  <system-out><![CDATA[10:23:35.709 INFO  TestBase - Starts method: boardCreation
-Total boards created = 10
-10:24:25.161 INFO  TestBase - Creates board with background color ->>Red
-board name is - Red8
-10:24:26.280 INFO  TestBase - Method boardCreation: finished
+  <testcase name="boardCreation" classname="BoardCreateTests" time="32.194"/>
+  <testcase name="createBoard[0](Orange)" classname="BoardCreateTests" time="6.15"/>
+  <testcase name="createBoard[1](Green)" classname="BoardCreateTests" time="6.16"/>
+  <testcase name="createBoard[2](Purple)" classname="BoardCreateTests" time="6.199"/>
+  <testcase name="createBoard[3](Blue)" classname="BoardCreateTests" time="6.199"/>
+  <system-out><![CDATA[19:10:43.441 INFO  TestBase - Starts method: boardCreation
+Total amount of boards =  0
+Total boards created = 0
+19:11:12.570 INFO  TestBase - Creates board with background color ->>Blue
+board name is - Blue4
+Total amount of boards =  1
+19:11:15.641 INFO  TestBase - Method boardCreation: finished
+19:11:15.648 INFO  TestBase - Starts method: createBoard
+Total boards created = 1
+Total amount of boards =  1
+19:11:18.905 INFO  TestBase - Creates board with background color ->>Orange
+board name is - Orange2
+Total amount of boards =  2
+19:11:21.800 INFO  TestBase - Method createBoard: finished
+19:11:21.805 INFO  TestBase - Starts method: createBoard
+Total boards created = 2
+Total amount of boards =  2
+19:11:25.061 INFO  TestBase - Creates board with background color ->>Green
+board name is - Green7
+Total amount of boards =  3
+19:11:27.966 INFO  TestBase - Method createBoard: finished
+19:11:27.967 INFO  TestBase - Starts method: createBoard
+Total boards created = 3
+Total amount of boards =  3
+19:11:31.236 INFO  TestBase - Creates board with background color ->>Purple
+board name is - Purple5
+Total amount of boards =  4
+19:11:34.167 INFO  TestBase - Method createBoard: finished
+19:11:34.168 INFO  TestBase - Starts method: createBoard
+Total boards created = 4
+Total amount of boards =  4
+19:11:37.413 INFO  TestBase - Creates board with background color ->>Blue
+board name is - Blue4
+Total amount of boards =  5
+19:11:40.369 INFO  TestBase - Method createBoard: finished
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

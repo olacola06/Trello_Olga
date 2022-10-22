@@ -7,8 +7,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
-
-public class MyDataProvider{
+public class DataProviderBoard {
     @DataProvider
     public Iterator<Object[]> backGroundNames(){
         List<Object[]> colors = new ArrayList();

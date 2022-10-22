@@ -1,7 +1,0 @@
-10:41:33.405 INFO  manager.ApplicationManager - All tests starts in 'Chrome' browser
-10:41:48.718 INFO  TestBase - Test starts with user details:-> Email: olamarchen@gmail.com, Password: olacola06
-10:42:07.644 INFO  TestBase - Starts method: createBoard2
-10:42:17.696 INFO  TestBase - Method createBoard2: finished
-10:42:17.696 INFO  TestBase - Starts method: createBoard2
-10:42:27.765 INFO  TestBase - Method createBoard2: finished
-10:42:27.765 INFO  TestBase - Starts method: createBoard2
